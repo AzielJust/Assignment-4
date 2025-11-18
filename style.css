@@ -6,3 +6,60 @@ html, body {
 canvas {
   display: block;
 }
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with blue gradient background */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+/* Header styling, moved closer to canvas */
+header {
+  text-align: center;
+  margin-top: 20px; /* reduced from 30px */
+  margin-bottom: 20px; /* reduced space to canvas */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px; /* less spacing */
+  color: #ffffff; /* white title */
+}
+
+header p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #a0d8f1; /* light blue text */
+}
+
+header a {
+  text-decoration: none;
+  color: #4dd0e1; /* blue link */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #ffffff; /* hover effect to white */
+}
+
+/* Center the canvas */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
